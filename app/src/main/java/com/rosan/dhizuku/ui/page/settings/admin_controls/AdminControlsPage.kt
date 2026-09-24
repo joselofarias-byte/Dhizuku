@@ -19,7 +19,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.twotone.ArrowBack
 import androidx.compose.material.icons.twotone.Adb
-import androidx.compose.material.icons.twotone.AppBlocking
+import androidx.compose.material.icons.twotone.Block
 import androidx.compose.material.icons.twotone.Refresh
 import androidx.compose.material.icons.twotone.Visibility
 import androidx.compose.material3.Card
@@ -345,7 +345,7 @@ private fun AppPolicyCard(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Icon(Icons.TwoTone.AppBlocking, contentDescription = null, modifier = Modifier.size(20.dp))
+                Icon(Icons.TwoTone.Block, contentDescription = null, modifier = Modifier.size(20.dp))
                 Spacer(Modifier.size(8.dp))
                 Text(stringResource(R.string.admin_block_uninstall), modifier = Modifier.weight(1f))
                 Switch(
