@@ -74,7 +74,7 @@ class AdminControlManager(private val context: Context) {
     }
 
     fun listUserApps(): List<ManagedAppPolicy> {
-        check(DhizukuState.state.isOwner) {
+        check(dpm.isDeviceOwnerApp(context.packageName) || dpm.isProfileOwnerApp(context.packageName)) {
             "Dhizuku no es propietario del dispositivo o perfil."
         }
 
@@ -114,7 +114,7 @@ class AdminControlManager(private val context: Context) {
         require(packageName != context.packageName) {
             "Dhizuku no puede ocultarse a sí mismo desde este panel."
         }
-        check(DhizukuState.state.isOwner) {
+        check(dpm.isDeviceOwnerApp(context.packageName) || dpm.isProfileOwnerApp(context.packageName)) {
             "Dhizuku no tiene privilegios de propietario."
         }
         val changed = dpm.setApplicationHidden(admin, packageName, hidden)
@@ -128,7 +128,7 @@ class AdminControlManager(private val context: Context) {
         require(packageName != context.packageName) {
             "Dhizuku no puede administrarse a sí mismo desde este panel."
         }
-        check(DhizukuState.state.isOwner) {
+        check(dpm.isDeviceOwnerApp(context.packageName) || dpm.isProfileOwnerApp(context.packageName)) {
             "Dhizuku no tiene privilegios de propietario."
         }
         dpm.setUninstallBlocked(admin, packageName, blocked)
