@@ -65,4 +65,28 @@
 
     <string name="daemon_service_notification_title">Dhizuku Daemon</string>
     <string name="daemon_service_notification_text">This is a Dhizuku notification to ensure service availability at any time. You can long press to hide this notification.</string>
+    <!-- Administrative controls -->
+    <string name="admin_controls_title">Administrative controls</string>
+    <string name="admin_controls_desc">Control ADB and selected app policies with Device Owner privileges.</string>
+    <string name="admin_controls_refreshed">Status refreshed.</string>
+    <string name="admin_owner_status">Administrative status</string>
+    <string name="admin_adb_title">ADB</string>
+    <string name="admin_adb_on">Enabled</string>
+    <string name="admin_adb_off">Disabled</string>
+    <string name="admin_adb_enabled_ok">ADB enabled and verified.</string>
+    <string name="admin_adb_disabled_ok">ADB disabled and verified.</string>
+    <string name="admin_debug_restriction_on">Debugging restriction: active</string>
+    <string name="admin_debug_restriction_off">Debugging restriction: inactive</string>
+    <string name="admin_adb_note">This controls the global ADB switch through DevicePolicyManager. Wireless debugging is a separate Android feature and is not changed here.</string>
+    <string name="admin_apps_title">Application policies</string>
+    <string name="admin_apps_desc">User-installed apps only. Changes are applied by DevicePolicyManager and the resulting state is read back after each action.</string>
+    <string name="admin_apps_search">Search app or package</string>
+    <string name="admin_apps_loading">Loading applications…</string>
+    <string name="admin_hide_app">Hide application</string>
+    <string name="admin_block_uninstall">Block uninstall</string>
+    <string name="admin_app_hidden_ok">%1$s was hidden.</string>
+    <string name="admin_app_visible_ok">%1$s is visible again.</string>
+    <string name="admin_app_uninstall_blocked_ok">Uninstall is blocked for %1$s.</string>
+    <string name="admin_app_uninstall_allowed_ok">Uninstall is allowed again for %1$s.</string>
+
 </resources>
