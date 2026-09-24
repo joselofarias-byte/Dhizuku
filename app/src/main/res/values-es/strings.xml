@@ -54,4 +54,28 @@
     <string name="donate_hide_confirm_title">Ocultar botón de donación</string>
     <string name="donate_hide_confirm_dsp">Esto no se puede deshacer desde la aplicación. ¿Seguro que quieres ocultar permanentemente el botón de donación?</string>
     <string name="home_status_owner_transferred">¡¡¡%1$s ha sido transferido!!!</string>
+    <!-- Controles administrativos -->
+    <string name="admin_controls_title">Controles administrativos</string>
+    <string name="admin_controls_desc">Controlá ADB y políticas de aplicaciones usando los privilegios de Propietario del dispositivo.</string>
+    <string name="admin_controls_refreshed">Estado actualizado.</string>
+    <string name="admin_owner_status">Estado administrativo</string>
+    <string name="admin_adb_title">ADB</string>
+    <string name="admin_adb_on">Activado</string>
+    <string name="admin_adb_off">Desactivado</string>
+    <string name="admin_adb_enabled_ok">ADB activado y verificado.</string>
+    <string name="admin_adb_disabled_ok">ADB desactivado y verificado.</string>
+    <string name="admin_debug_restriction_on">Restricción de depuración: activa</string>
+    <string name="admin_debug_restriction_off">Restricción de depuración: inactiva</string>
+    <string name="admin_adb_note">Este control modifica el interruptor global de ADB mediante DevicePolicyManager. La depuración inalámbrica es una función separada de Android y no se modifica aquí.</string>
+    <string name="admin_apps_title">Políticas de aplicaciones</string>
+    <string name="admin_apps_desc">Sólo se muestran aplicaciones instaladas por el usuario. Cada cambio se aplica con DevicePolicyManager y luego se vuelve a leer el estado real.</string>
+    <string name="admin_apps_search">Buscar aplicación o paquete</string>
+    <string name="admin_apps_loading">Cargando aplicaciones…</string>
+    <string name="admin_hide_app">Ocultar aplicación</string>
+    <string name="admin_block_uninstall">Bloquear desinstalación</string>
+    <string name="admin_app_hidden_ok">Se ocultó %1$s.</string>
+    <string name="admin_app_visible_ok">%1$s vuelve a estar visible.</string>
+    <string name="admin_app_uninstall_blocked_ok">Se bloqueó la desinstalación de %1$s.</string>
+    <string name="admin_app_uninstall_allowed_ok">Se volvió a permitir la desinstalación de %1$s.</string>
+
 </resources>
