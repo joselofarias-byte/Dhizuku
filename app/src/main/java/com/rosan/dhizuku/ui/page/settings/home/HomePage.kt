@@ -135,6 +135,9 @@ fun HomePage(
             item("dhizuku_state") {
                 DhizukuStateWidget()
             }
+            if (dhizukuState.isOwner) item("admin_controls") {
+                AdminControlsWidget(navController)
+            }
             if (dhizukuState.isOwner) item("settings") {
                 SettingsWidget(navController)
             }
@@ -305,6 +308,19 @@ private fun LazyItemScope.DhizukuStateWidget() {
             )
         }
     }, onClick = { DhizukuState.sync(context )})
+}
+
+@Composable
+private fun LazyItemScope.AdminControlsWidget(navController: NavController) {
+    CardWidget(onClick = {
+        navController.navigate(SettingsRoute.AdminControls.route)
+    }, icon = {
+        Icon(imageVector = Icons.TwoTone.Adb, contentDescription = null)
+    }, title = {
+        Text(stringResource(R.string.admin_controls_title))
+    }, text = {
+        Text(stringResource(R.string.admin_controls_desc))
+    })
 }
 
 @Composable

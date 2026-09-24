@@ -8,6 +8,7 @@ import androidx.navigation.compose.rememberNavController
 
 import com.rosan.dhizuku.ui.page.settings.activate.ActivatePage
 import com.rosan.dhizuku.ui.page.settings.app_management.AppManagementPage
+import com.rosan.dhizuku.ui.page.settings.admin_controls.AdminControlsPage
 import com.rosan.dhizuku.ui.page.settings.home.HomePage
 import com.rosan.dhizuku.ui.page.settings.settings.SettingsPage
 
@@ -27,6 +28,12 @@ fun SettingsPage(windowInsets: WindowInsets) {
         }
         composable(route = SettingsRoute.AppManagement.route) {
             AppManagementPage(
+                windowInsets = windowInsets,
+                navController = navController
+            )
+        }
+        composable(route = SettingsRoute.AdminControls.route) {
+            AdminControlsPage(
                 windowInsets = windowInsets,
                 navController = navController
             )
