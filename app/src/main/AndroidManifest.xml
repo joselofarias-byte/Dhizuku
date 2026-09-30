@@ -31,6 +31,10 @@
         android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         tools:node="remove" />
 
+    <queries>
+        <package android:name="com.joselofarias.nightzuku" />
+    </queries>
+
     <uses-feature
         android:name="android.software.device_admin"
         android:required="true" />
@@ -142,6 +146,8 @@
                 <!-- booted receiver-->
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_UNLOCKED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
 
                 <!-- device/profile owner changed receiver -->
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
